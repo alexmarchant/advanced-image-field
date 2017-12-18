@@ -178,7 +178,7 @@ class AdvancedImageField extends Assets
     }
 
     /**
-     * Validates the files to make sure they are of the allowed resolution.
+     * Validates the files to make sure they are of the allowed image types.
      *
      * @param ElementInterface $element
      *
@@ -220,7 +220,13 @@ class AdvancedImageField extends Assets
             }
         }
     }
-
+    
+    /**
+     * Created an array of options for the image type multiselect
+     * in the settings template.
+     *
+     * @return array
+     */
     public function imageTypeOptions(): array
     {
         return array_map(function ($extension) {
