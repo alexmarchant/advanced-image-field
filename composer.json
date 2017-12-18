@@ -3,9 +3,25 @@
   "description": "Image field with advanced options and validations.",
   "version": "1.0.0",
   "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "advanced",
+    "image",
+    "dimensions",
+    "extensions",
+    "extensions",
+  ],
+  "support": {
+    "docs": "https://github.com/nystudio107/craft3-imageoptimize/blob/master/README.md",
+    "issues": "https://github.com/nystudio107/craft3-imageoptimize/issues"
+  },
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.0.0-RC2"
+    "craftcms/cms": "^3.0.0-RC1"
   },
   "autoload": {
     "psr-4": {
@@ -18,6 +34,7 @@
   "extra": {
     "handle": "advanced-image-field",
     "name": "Advanced Image Field",
+    "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-imageoptimize/master/CHANGELOG.md",
     "developer": "Alex Marchant",
     "developerUrl": "https://www.alexmarchant.com",
     "class": "alexmarchant\\advancedimage\\AdvancedImage"
