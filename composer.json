@@ -12,8 +12,6 @@
     "image",
     "dimensions",
     "extensions",
-    "image-extensions",
-    "image-types",
   ],
   "support": {
     "docs": "https://github.com/alexmarchant/advanced-image-field/blob/master/README.md",
