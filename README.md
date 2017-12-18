@@ -17,7 +17,7 @@ Advanced Image Field works on Craft 3.x.
 
 ## Advanced Image Field Overview
 
-This plugin extends the Asset field type, and support most of the options from that field type, in addition it adds two features:
+This plugin extends the Asset field type, and supports most of the options from that field type. In addition it adds two settings:
 
 1. Restrict image dimensions
 2. Restrict image type (by file extensions)
