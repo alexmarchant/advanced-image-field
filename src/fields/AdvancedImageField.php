@@ -225,7 +225,7 @@ class AdvancedImageField extends Assets
      * Created an array of options for the image type multiselect
      * in the settings template.
      *
-     * @return void
+     * @return array
      */
     public function imageTypeOptions(): array
     {
