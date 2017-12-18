@@ -23,10 +23,13 @@ This plugin extends the Asset field type, and support most of the options from t
 2. Restrict image type (by file extensions)
 
 **Restrict image dimensions**
+
 ![Screenshot](resources/screenshots/settings-dimensions.png)
 
 **Required dimensions are shown on the front end**
+
 ![Screenshot](resources/screenshots/dimensions.png)
 
 **Restrict image type**
+
 ![Screenshot](resources/screenshots/settings-image-types.png)
