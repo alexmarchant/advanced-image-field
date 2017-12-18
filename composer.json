@@ -17,8 +17,6 @@
     "docs": "https://github.com/alexmarchant/advanced-image-field/blob/master/README.md",
     "issues": "https://github.com/alexmarchant/advanced-image-field/issues"
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "require": {
     "craftcms/cms": "^3.0.0-RC1"
   },
