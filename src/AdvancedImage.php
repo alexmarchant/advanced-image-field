@@ -8,19 +8,22 @@ namespace alexmarchant\advancedimage;
 
 use alexmarchant\advancedimage\fields\AdvancedImageField;
 
-use Craft;
 use craft\base\Plugin;
-use craft\services\Plugins;
 use craft\services\Fields;
-use craft\events\PluginEvent;
 use craft\events\RegisterComponentTypesEvent;
 
 use yii\base\Event;
 
+/**
+ * Registers the field type with Craft.
+ */
 class AdvancedImage extends Plugin
 {
     public static $plugin;
 
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         parent::init();
