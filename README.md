@@ -26,9 +26,13 @@ This plugin extends the Asset field type, and support most of the options from t
 
 ![Screenshot](resources/screenshots/settings-dimensions.png)
 
+---
+
 **Required dimensions are shown on the front end**
 
 ![Screenshot](resources/screenshots/dimensions.png)
+
+---
 
 **Restrict image type**
 
