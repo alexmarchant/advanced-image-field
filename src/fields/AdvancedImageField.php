@@ -70,7 +70,8 @@ class AdvancedImageField extends Assets
     public $restrictImageTypes;
 
     /**
-     * @var array|null The file kinds that the field should be restricted to (only used if [[restrictImageTypes]] is true)
+     * @var array|null The file kinds that the field should be restricted to (only used if
+     * [[restrictImageTypes]] is true)
      */
     public $allowedImageTypes;
 
@@ -263,8 +264,12 @@ class AdvancedImageField extends Assets
         // Grab data strings
         if (isset($value['data']) && is_array($value['data'])) {
             foreach ($value['data'] as $index => $dataString) {
-                if (preg_match('/^data:(?<type>[a-z0-9]+\/[a-z0-9]+);base64,(?<data>.+)/i',
-                    $dataString, $matches)) {
+                if (preg_match(
+                    '/^data:(?<type>[a-z0-9]+\/[a-z0-9]+);base64,(?<data>.+)/i',
+                    $dataString,
+                    $matches
+                )
+                ) {
                     $type = $matches['type'];
                     $data = base64_decode($matches['data']);
                     if (!$data) {
@@ -304,4 +309,3 @@ class AdvancedImageField extends Assets
         return $uploadedFiles;
     }
 }
-

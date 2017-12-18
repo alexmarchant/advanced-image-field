@@ -1,11 +1,8 @@
 <?xml version="1.0"?>
-<ruleset name="PSR2">
-  <description>PSR2</description>
+<ruleset name="MyRuleset">
   <arg name="tab-width" value="4" />
   <rule ref="PSR2">
-    <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+    <exclude name="PSR2.Methods.MethodDeclaration.Underscore"/>
   </rule>
-  <rule ref="PSR1.Classes.ClassDeclaration">
-    <exclude name="PSR1.Classes.ClassDeclaration.MissingNamespace" />
-  </rule>
+  <file>./src/</file>
 </ruleset>

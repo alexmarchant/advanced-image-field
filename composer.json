@@ -12,11 +12,12 @@
     "image",
     "dimensions",
     "extensions",
-    "extensions",
+    "image-extensions",
+    "image-types",
   ],
   "support": {
-    "docs": "https://github.com/nystudio107/craft3-imageoptimize/blob/master/README.md",
-    "issues": "https://github.com/nystudio107/craft3-imageoptimize/issues"
+    "docs": "https://github.com/alexmarchant/advanced-image-field/blob/master/README.md",
+    "issues": "https://github.com/alexmarchant/advanced-image-field/issues"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
