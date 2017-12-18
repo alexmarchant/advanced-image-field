@@ -1,0 +1,73 @@
+{% extends "_components/fieldtypes/Assets/settings" %}
+
+{% import "_includes/forms" as forms %}
+
+{% block fieldSettings %}
+  {% block dimensionsFields %}
+    {{ forms.checkboxField({
+      label: 'Restrict image dimensions?'|t('advanced-image-field'),
+      class: 'restrictDimensions',
+      id: 'restrictDimensions',
+      name: 'restrictDimensions',
+      value: 1,
+      checked: field.restrictDimensions,
+      toggle: 'restrict-dimensions'
+      }) }}
+
+      <div id="restrict-dimensions"{% if not field.restrictDimensions %} class="hidden indent"{% endif %}>
+        {{ forms.textField({
+          label: 'Min Width'|t('advanced-image-field'),
+          name: 'minWidth',
+          value: field.minWidth,
+          }) }}
+
+        {{ forms.textField({
+          label: 'Max Width'|t('advanced-image-field'),
+          name: 'maxWidth',
+          value: field.maxWidth,
+          }) }}
+
+        {{ forms.textField({
+          label: 'Min Height'|t('advanced-image-field'),
+          name: 'minHeight',
+          value: field.minHeight,
+          }) }}
+
+        {{ forms.textField({
+          label: 'Max Height'|t('advanced-image-field'),
+          name: 'maxHeight',
+          value: field.maxHeight,
+          }) }}
+
+          <hr>
+      </div>
+  {% endblock %}
+
+  {% block imageTypesFields %}
+    {{ forms.checkboxField({
+      label: 'Restrict image types?'|t('advanced-image-field'),
+      class: 'restrictImageTypes',
+      id: 'restrictImageTypes',
+      name: 'restrictImageTypes',
+      value: 1,
+      checked: field.restrictImageTypes,
+      toggle: 'restrict-image-types'
+      }) }}
+
+      <div id="restrict-image-types"{% if not field.restrictImageTypes %} class="hidden indent"{% endif %}>
+        {{ forms.multiselectField({
+          label: 'Allowed Image Types'|t('advanced-image-field'),
+          name: 'allowedImageTypes',
+          values: field.allowedImageTypes,
+          options: field.imageTypeOptions(),
+          size: field.imageTypeOptions()|length
+          }) }}
+      </div>
+  {% endblock %}
+
+  {{ block('uploadLocationFields') }}
+  {{ block('limitField') }}
+  {{ block('viewModeField') }}
+  {{ block('selectionLabelField') }}
+  {{ block('advancedSettings') }}
+{% endblock %}

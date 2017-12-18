@@ -1,0 +1,25 @@
+{
+  "name": "alexmarchant/advanced-image-field",
+  "description": "Image field with advanced options and validations.",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "minimum-stability": "dev",
+  "require": {
+    "craftcms/cms": "^3.0.0-RC2"
+  },
+  "autoload": {
+    "psr-4": {
+      "alexmarchant\\advancedimage\\": "src/"
+    }
+  },
+  "support": {
+    "email": "alexjmarchant@gmail.com"
+  },
+  "extra": {
+    "handle": "advanced-image-field",
+    "name": "Advanced Image Field",
+    "developer": "Alex Marchant",
+    "developerUrl": "https://www.alexmarchant.com",
+    "class": "alexmarchant\\advancedimage\\AdvancedImage"
+  }
+}
