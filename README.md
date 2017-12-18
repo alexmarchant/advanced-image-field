@@ -39,3 +39,4 @@ This plugin extends the Asset field type, and support most of the options from t
 **Restrict image type**
 
 ![Screenshot](resources/screenshots/settings-image-types.png)
+
