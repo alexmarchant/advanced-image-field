@@ -1,7 +1,5 @@
 # Advanced Image Field
 
-**Note**: This plugin may become a paid add-on when the Craft Plugin store becomes available.
-
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-RC1 or later.
