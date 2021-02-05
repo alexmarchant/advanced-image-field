@@ -65,9 +65,5 @@
       </div>
   {% endblock %}
 
-  {{ block('uploadLocationFields') }}
-  {{ block('limitField') }}
-  {{ block('viewModeField') }}
-  {{ block('selectionLabelField') }}
-  {{ block('advancedSettings') }}
+  {{ parent() }}
 {% endblock %}
